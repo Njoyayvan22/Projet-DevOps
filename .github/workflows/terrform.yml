@@ -14,7 +14,7 @@ jobs:
       - name: Auth Google Cloud
         uses: 'google-github-actions/auth@v2'
         with:
-          credentials_json: '${{ secrets.GCP_SA_KEY }}'
+          credentials_json: '${{ secrets.CREDENTIALS }}'
 
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v3
