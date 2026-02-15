@@ -1,3 +1,8 @@
+
+resource "google_project_service" "compute_api" {
+  project = var.project_id
+  service = "compute.googleapis.com"
+}
 resource "google_compute_instance" "gitlab_vm" {
   name         = "gitlab-instance"
   machine_type = var.machine_type
