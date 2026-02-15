@@ -7,6 +7,6 @@ resource "google_compute_firewall" "allow_gitlab" {
     ports    = ["80", "443", "22"]
   }
 
-  source_ranges = ["0.0.0.0/0"] # Attention : en prod, restreignez à votre IP
+  source_ranges = ["0.0.0.0/0"]
   target_tags   = ["gitlab-server"]
 }

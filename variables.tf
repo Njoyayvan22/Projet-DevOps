@@ -1,16 +1,19 @@
 variable "project_id" {
-  description = "devops-cours-487214"
-  type        = string
+  type    = string
+  default = "devops-cours-487214"
 }
 
 variable "region" {
+  type    = string
   default = "europe-west1"
 }
 
 variable "zone" {
+  type    = string
   default = "europe-west1-b"
 }
 
 variable "machine_type" {
-  default = "e2-medium" # Minimum pour faire tourner GitLab
+  type    = string
+  default = "e2-medium"
 }

@@ -1,3 +1,4 @@
 output "gitlab_public_ip" {
-  value = google_compute_instance.gitlab_vm.network_interface[0].access_config[0].nat_ip
+  value       = google_compute_instance.gitlab_vm.network_interface[0].access_config[0].nat_ip
+  description = "L'adresse IP publique de votre instance GitLab"
 }

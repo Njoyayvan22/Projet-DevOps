@@ -7,7 +7,7 @@ resource "google_compute_instance" "gitlab_vm" {
   boot_disk {
     initialize_params {
       image = "ubuntu-os-cloud/ubuntu-2204-lts"
-      size  = 30 # GitLab est gourmand en espace disque
+      size  = 30 
     }
   }
 
@@ -18,7 +18,6 @@ resource "google_compute_instance" "gitlab_vm" {
     }
   }
 
-  # Installation automatique de Docker au démarrage
   metadata_startup_script = <<-EOT
     #!/bin/bash
     sudo apt-get update
