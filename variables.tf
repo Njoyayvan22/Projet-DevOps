@@ -1,5 +1,5 @@
 variable "project_id" {
-  description = "L'ID de votre projet GCP"
+  description = "devops-cours-487214"
   type        = string
 }
 
